@@ -1,0 +1,7 @@
+@import "_reset.css";
+@import "_colors.css";
+@import "_typography.css";
+
+body {
+  background-color: var(--alabaster);
+}
