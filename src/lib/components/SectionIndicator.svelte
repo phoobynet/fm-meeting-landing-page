@@ -12,9 +12,9 @@
 >
 
 	<line
-		x1='29'
+		x1='28'
 		y1='0'
-		x2='29'
+		x2='28'
 		y2='84'
 		class='indicator__line'
 	/>

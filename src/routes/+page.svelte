@@ -60,7 +60,30 @@
 				alt=''
 			/>
 		</div>
+
+		<div class='main__message'>
+			Built for modern use
+		</div>
+
+		<div class='main__about'>
+			<h2>Smarter meetings, all in one place</h2>
+			<p>Send messages, share files, show your screen, and record your meetings — all in one workspace. Control who can
+				join with invite&#8209;only team access, data encryption, and data export.</p>
+		</div>
+
+		<div class='main__section__02'>
+			<SectionIndicator sectionNumber='02' />
+		</div>
 	</main>
+	<footer class='footer'>
+		<h2 class='footer__heading'>Experience more together</h2>
+		<p class='footer__blurb'>
+			Stay connected with reliable HD meetings and unlimited one-on-one and group video sessions.
+		</p>
+		<button class='button footer__button'>
+			Download <em>v1.3</em>
+		</button>
+	</footer>
 </div>
 
 <style>
@@ -169,17 +192,101 @@
     margin-top: 4rem;
   }
 
-	.main__images {
-		margin-top: 3.9rem;
-		display: grid;
-		grid-template-columns: repeat(2, 1fr);
-		grid-column-gap: 1.5rem;
-		grid-row-gap: 1.5rem;
-	}
+  .main__images {
+    margin-top: 3.9rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 1.5rem;
+    grid-row-gap: 1.5rem;
+  }
 
-	.main__images img {
-		width: 151px;
-		height: 143px;
-		border-radius: .5rem;
-	}
+  .main__images img {
+    width: 151px;
+    height: 143px;
+    border-radius: .5rem;
+  }
+
+  .main__message {
+    margin-top: 4rem;
+    font-size: 1rem;
+    letter-spacing: .25rem;
+    line-height: 26px;
+    font-weight: 900;
+    color: var(--hippie-blue);
+    text-transform: uppercase;
+  }
+
+  .main__about {
+    display: grid;
+    place-items: center;
+    margin: 0 1.6rem;
+    text-align: center;
+  }
+
+  .main__about h2 {
+    margin-top: 1.4rem;
+    font-size: 2rem;
+    line-height: 36px;
+  }
+
+  .main__about p {
+    margin-top: 2.2rem;
+    line-height: 26px;
+    letter-spacing: 0;
+    color: var(--manatee);
+  }
+
+  .main__section__02 {
+    margin-top: 3.9rem;
+		z-index: 1;
+  }
+
+  .footer {
+    position: relative;
+    margin-top: -2rem;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    height: 428px;
+    background-color: var(--hippie-blue);
+    color: var(--alabaster);
+    text-align: center;
+    padding: 0 1.6rem;
+  }
+
+  .footer:before {
+    content: ' ';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.1;
+    background-image: url('$lib/assets/mobile/image-footer.jpg');
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    background-size: cover;
+    background-blend-mode: multiply;
+  }
+
+  .footer__heading {
+    margin-top: 5.8rem;
+    font-size: 2rem;
+    line-height: 36px;
+		z-index: 1;
+  }
+
+  .footer__blurb {
+    margin-top: 1.4rem;
+    font-size: 18px;
+		z-index: 1;
+  }
+
+  .footer__button.button {
+    margin-top: 2rem;
+    background-color: var(--deluge);
+    padding: 1rem 2.6rem;
+		z-index: 1;
+  }
 </style>
