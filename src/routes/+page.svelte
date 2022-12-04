@@ -1,3 +1,12 @@
+<script>
+	import SectionIndicator from '$lib/components/SectionIndicator.svelte'
+	import womanInVideoCallUrl from '$lib/assets/desktop/image-woman-in-videocall.jpg'
+	import womanVideoChattingUrl from '$lib/assets/desktop/image-women-videochatting.jpg'
+	import manTextingUrl from '$lib/assets/desktop/image-man-texting.jpg'
+	import manInMeetingUrl from '$lib/assets/desktop/image-men-in-meeting.jpg'
+
+</script>
+
 <div class='meeting-landing-page'>
 	<header class='header'>
 		<img
@@ -29,13 +38,34 @@
 			</div>
 		</div>
 	</header>
-	<main>
+	<main class='main'>
+		<SectionIndicator sectionNumber='01' />
 
+		<div class='main__images'>
+			<img
+				src={womanInVideoCallUrl}
+				alt=''
+			>
+			<img
+				src={womanVideoChattingUrl}
+				alt=''
+			>
+			<img
+				src={manInMeetingUrl}
+				alt=''
+			>
+
+			<img
+				src={manTextingUrl}
+				alt=''
+			/>
+		</div>
 	</main>
 </div>
 
 <style>
   .meeting-landing-page {
+    min-height: 2215px;
   }
 
   .header {
@@ -73,6 +103,7 @@
   .hero__image__left {
     content: url('$lib/assets/desktop/image-hero-left.png');
     object-position: right;
+    justify-self: end;
     grid-column: 1;
   }
 
@@ -80,6 +111,7 @@
     content: url('$lib/assets/desktop/image-hero-right.png');
     object-position: left;
     grid-column: 3;
+    justify-self: start;
   }
 
   .hero__cta {
@@ -99,16 +131,18 @@
     padding: 0 1rem;
   }
 
-	.hero__cta__buttons {
-		display: flex;
-		width: auto;
-		flex-direction: column;
-		justify-content: center;
-		margin-top: 2rem;
-	}
+  .hero__cta__buttons {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: repeat(2, auto);
+    grid-row-gap: 1.1rem;
+    margin-top: 1.8rem;
+  }
 
   .button {
-    padding: 1rem 2rem;
+    place-self: center;
+    height: 58px;
+    padding: 1.2rem 2.5rem;
     border-radius: 2rem;
     color: var(--alabaster);
     font-weight: 900;
@@ -126,5 +160,26 @@
 
   .button__secondary {
     background-color: var(--deluge);
+    padding: 1rem 1.8rem;
   }
+
+  .main {
+    display: grid;
+    place-items: center;
+    margin-top: 4rem;
+  }
+
+	.main__images {
+		margin-top: 3.9rem;
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		grid-column-gap: 1.5rem;
+		grid-row-gap: 1.5rem;
+	}
+
+	.main__images img {
+		width: 151px;
+		height: 143px;
+		border-radius: .5rem;
+	}
 </style>
