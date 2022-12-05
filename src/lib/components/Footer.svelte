@@ -1,10 +1,14 @@
 <script>
 	import Button from '$lib/components/Button.svelte'
+	import Heading from '$lib/components/Heading.svelte'
 </script>
 
-<footer class='footer'>
+<div class='footer'>
 	<div style='z-index: 1'>
-		<h2 class='footer__heading'>Experience more together</h2>
+		<Heading level={2}>
+			Experience more together
+		</Heading>
+
 		<p class='footer__blurb'>
 			Stay connected with reliable HD meetings and unlimited one-on-one and group video sessions.
 		</p>
@@ -15,7 +19,7 @@
 			Download <em class='version'>v1.3</em>
 		</Button>
 	</div>
-</footer>
+</div>
 
 <style lang='scss'>
   .footer {

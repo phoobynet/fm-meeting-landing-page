@@ -1,14 +1,6 @@
 body {
   font-family: 'Red Hat Display', sans-serif;
 }
-
-.heading-1 {
-  font-size: 2.5rem;
-  font-weight: 900;
-  line-height: 2.75rem;
-  color: var(--ebony-clay);
-}
-
 .normal-text {
   font-size: 1rem;
   font-weight: 500;
@@ -17,18 +9,7 @@ body {
   color: var(--manatee);
 }
 
-@media (min-width: 768px) {
-  .heading-1 {
-    font-size: 3rem;
-  }
-}
-
 @media (min-width: 1440px ) {
-  .heading-1 {
-    font-size: 4rem;
-    line-height: 4rem;
-  }
-
   .normal-text {
     font-size: 1.125rem;
   }

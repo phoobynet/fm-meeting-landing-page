@@ -3,11 +3,7 @@
 	import Heading from '$lib/components/Heading.svelte'
 </script>
 
-<header class='header'>
-	<img
-		alt=''
-		class='header__logo'
-	>
+<div class='hero__container'>
 	<div class='hero'>
 		<img
 			alt=''
@@ -18,9 +14,11 @@
 			class='hero__image__right'
 		>
 		<div class='hero__cta'>
-			<Heading size='1'>
-				Group Chat for Everyone
-			</Heading>
+			<header>
+				<Heading level={1}>
+					Group Chat for Everyone
+				</Heading>
+			</header>
 			<p class='normal-text'>
 				Meet makes it easy to connect with others face-to-face virtually and collaborate across any device.
 			</p>
@@ -34,27 +32,17 @@
 			</div>
 		</div>
 	</div>
-</header>
+</div>
 
 <style lang='scss'>
-  .header {
+  .hero__container {
     display: grid;
     grid-template-rows: repeat(2, auto);
     grid-template-columns: auto;
-    margin-top: 3rem;
 
     .version {
       color: var(--malibu);
       font-style: normal;
-    }
-
-    &__logo {
-      content: url('$lib/assets/logo.svg');
-      width: 119px;
-      height: 28px;
-      grid-row: 1;
-      grid-column: 1;
-      justify-self: center;
     }
 
     .hero {
@@ -88,11 +76,15 @@
         }
       }
 
-
       &__cta {
-				margin-top: 3rem;
+        margin-top: 3rem;
         grid-row: 2;
         grid-column: 1 / span 3;
+
+        header {
+          margin-left: 2.6rem;
+          margin-right: 2.6rem;
+        }
 
         &__buttons {
           display: grid;

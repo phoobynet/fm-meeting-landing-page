@@ -1,10 +1,10 @@
 <script>
-	export let size = 1
+	export let level = 1
 </script>
 
 <div
 	role='heading'
-	aria-level='{size}'
+	aria-level='{level}'
 >
 	<slot />
 </div>
@@ -13,11 +13,16 @@
   div[role='heading'] {
     color: var(--ebony-clay);
     font-weight: 900;
-		text-align: center;
+    text-align: center;
 
     &[aria-level='1'] {
       font-size: 2.5rem;
       line-height: 2.75rem;
+    }
+
+    &[aria-level='2'] {
+      font-size: 2rem;
+      line-height: 2.25rem;
     }
   }
 
