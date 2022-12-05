@@ -9,7 +9,9 @@
 <div class='landing'>
 	<header>
 		<Logo />
-		<Hero />
+		<div class='landing__hero'>
+			<Hero />
+		</div>
 	</header>
 	<main>
 		<SectionIndicator sectionNumber='01' />
@@ -17,7 +19,9 @@
 	</main>
 	<footer>
 		<SectionIndicator sectionNumber='02' />
-		<Footer />
+		<div class='landing__footer'>
+			<Footer />
+		</div>
 	</footer>
 </div>
 
@@ -27,12 +31,22 @@
 
     header {
       margin-top: 3rem;
+
+      .landing__hero {
+        margin-top: 3.3rem;
+      }
     }
 
     main {
-      display: flex;
-      justify-content: center;
       margin-top: 4rem;
+    }
+
+    footer {
+      margin-top: 4rem;
+
+      .landing__footer {
+        z-index: -99;
+      }
     }
   }
 </style>

@@ -15,7 +15,7 @@
   .btn {
     place-self: center;
     height: 3.62rem;
-    padding: 1.2rem 2.5rem;
+    padding: 1.1rem 2.5rem;
     border-radius: 2rem;
     color: var(--alabaster);
     font-weight: 900;

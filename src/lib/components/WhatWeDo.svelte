@@ -3,11 +3,10 @@
 	import womanVideoChattingUrl from '$lib/assets/desktop/image-women-videochatting.jpg'
 	import manTextingUrl from '$lib/assets/desktop/image-man-texting.jpg'
 	import manInMeetingUrl from '$lib/assets/desktop/image-men-in-meeting.jpg'
-	import SectionIndicator from '$lib/components/SectionIndicator.svelte'
 </script>
 
 <div class='what-we-do'>
-	<div class='images'>
+	<div class='what-we-do__images'>
 		<img
 			src={womanInVideoCallUrl}
 			alt=''
@@ -36,19 +35,14 @@
 		<p>Send messages, share files, show your screen, and record your meetings — all in one workspace. Control who can
 			join with invite&#8209;only team access, data encryption, and data export.</p>
 	</div>
-
-	<div class='what-we-do__section__02'>
-		<SectionIndicator sectionNumber='02' />
-	</div>
 </div>
 
 <style lang='scss'>
   .what-we-do {
     display: grid;
     place-items: center;
-    margin-top: 4rem;
 
-    .images {
+    &__images {
       margin-top: 3.9rem;
       display: grid;
       grid-template-columns: repeat(2, 1fr);
@@ -91,11 +85,5 @@
         color: var(--manatee);
       }
     }
-
-    &__section__02 {
-      margin-top: 3.9rem;
-      z-index: 1;
-    }
   }
-
 </style>

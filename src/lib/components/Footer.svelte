@@ -5,9 +5,9 @@
 
 <div class='footer'>
 	<div style='z-index: 1'>
-		<Heading level={2}>
+		<div class='footer__heading'>
 			Experience more together
-		</Heading>
+		</div>
 
 		<p class='footer__blurb'>
 			Stay connected with reliable HD meetings and unlimited one-on-one and group video sessions.
@@ -24,7 +24,6 @@
 <style lang='scss'>
   .footer {
     position: relative;
-    margin-top: -2rem;
     display: flex;
     flex-direction: column;
     justify-items: center;
@@ -51,7 +50,7 @@
     }
 
     &__content {
-      z-index: 1;
+      //z-index: 1;
     }
 
     &__heading {
